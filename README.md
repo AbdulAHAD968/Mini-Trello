@@ -1,6 +1,11 @@
 # BoardHub
 
-BoardHub is a modern, ready-to-deploy project management application inspired by Kanban boards, designed to help teams organize tasks and collaborate effectively. Built with a serverless architecture and MongoDB, it offers a free, scalable solution for project management. Deploy it effortlessly on Vercel and start managing your projects today.
+BoardHub is a ready-to-deploy project management application inspired by Kanban boards, designed to help teams organize tasks and collaborate effectively. Built with a serverless architecture and MongoDB, it offers a free, scalable solution for project management. Deploy it effortlessly on Vercel and start managing your projects today.
+
+
+![Home Page](/github-readme-assets/home.png)
+
+---
 
 ## Table of Contents
 - [Features](#features)
@@ -17,6 +22,8 @@ BoardHub is a modern, ready-to-deploy project management application inspired by
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## Features
 - Create, edit, and delete Kanban boards.
 - Manage board members with add/remove functionality.
@@ -28,8 +35,12 @@ BoardHub is a modern, ready-to-deploy project management application inspired by
 - Progressive Web App (PWA) compatibility with favicon and touch icons.
 - Free and ready-to-deploy project management hub.
 
+![Login Page](/github-readme-assets/login.png)
+
+---
+
 ## Technical Details
-- **Framework**: Next.js 14 (App Router) for server-side rendering and static site generation.
+- **Framework**: Next.js 15 (App Router) for server-side rendering and static site generation.
 - **Frontend**: React with TypeScript for type-safe components.
 - **Styling**: Tailwind CSS for responsive and utility-first styling.
 - **Animations**: Framer Motion for smooth transitions and animations.
@@ -44,6 +55,8 @@ BoardHub is a modern, ready-to-deploy project management application inspired by
 - **Authentication**: Token-based authentication stored in localStorage.
 - **Background**: Gradient-based design with teal-cyan color scheme.
 
+---
+
 ## System Requirements
 - Node.js: v18 or higher
 - npm: v9 or higher
@@ -51,6 +64,8 @@ BoardHub is a modern, ready-to-deploy project management application inspired by
 - Vercel CLI: For deployment (optional, for local Vercel commands)
 - MongoDB: MongoDB Atlas account or local MongoDB instance
 - Browser: Modern browsers (Chrome, Firefox, Safari, Edge)
+
+---
 
 ## Installation
 1. Clone the repository:
@@ -73,6 +88,10 @@ BoardHub is a modern, ready-to-deploy project management application inspired by
    npm run dev
    ```
 5. Open `http://localhost:3000` in your browser.
+
+![Boards Page](/github-readme-assets/boards.png)
+
+---
 
 ## Testing
 Testing ensures the reliability and functionality of BoardHub. The project uses Jest for unit and integration testing, with React Testing Library for component testing.
@@ -170,6 +189,8 @@ Integration tests verify interactions between components, API calls, and MongoDB
   npm test
   ```
 
+---
+
 ## Database
 BoardHub uses MongoDB as its database to store user and board data, leveraging MongoDB Atlas for cloud-hosted, scalable storage.
 
@@ -204,6 +225,10 @@ BoardHub uses MongoDB as its database to store user and board data, leveraging M
   - Secure connection with SRV protocol and TLS.
   - Efficient querying for user search and board management.
 
+![List Page](/github-readme-assets/list.png)
+
+---
+
 ## Serverless Backend
 BoardHub uses Vercel Serverless Functions to handle backend logic, providing a scalable and maintenance-free API layer.
 
@@ -234,6 +259,8 @@ BoardHub uses Vercel Serverless Functions to handle backend logic, providing a s
 - **Environment Variables**:
   - `MONGODB_URI`: MongoDB connection string.
   - `NEXT_PUBLIC_API_URL`: Base URL for API requests (e.g., `https://boardshub.vercel.app/api`).
+
+---
 
 ## CI/CD Pipeline with Vercel
 BoardHub is deployed on Vercel with an automated CI/CD pipeline integrated with the GitHub repository, making it a free and ready-to-deploy solution.
@@ -266,6 +293,8 @@ BoardHub is deployed on Vercel with an automated CI/CD pipeline integrated with 
     - Pull requests create preview deployments with unique URLs (e.g., `https://mini-trello-git-branch-name-abdulahad968.vercel.app`).
     - Rollbacks are supported via Vercel’s deployment history.
 
+---
+
 ## Deployment
 The application is live at `https://boardshub.vercel.app/`. As a free project management hub, BoardHub is ready to deploy with minimal setup. To deploy updates:
 1. Push changes to the `main` branch of the GitHub repository:
@@ -283,6 +312,8 @@ vercel
 vercel --prod
 ```
 
+---
+
 ## Contributing
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature-name`).
@@ -291,6 +322,8 @@ vercel --prod
 5. Open a pull request to the `main` branch.
 
 Ensure code follows TypeScript and ESLint standards. Run `npm run lint` before committing.
+
+---
 
 ## License
 MIT License. See [LICENSE](LICENSE) for details.
