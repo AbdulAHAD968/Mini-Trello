@@ -87,7 +87,7 @@ export default function HomePage() {
             variants={itemVariants}
           >
             <FaStar className="text-yellow-400" />
-            <span className="text-white text-sm font-medium">Trusted by 10,000+ teams worldwide</span>
+            <span className="text-white text-sm font-medium">Trusted by 10+ teams worldwide</span>
             <FaRocket className="text-cyan-400 ml-2" />
           </motion.div>
 
