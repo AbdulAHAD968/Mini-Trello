@@ -54,8 +54,8 @@ export function PriorityBadge({
 
   const sizeConfig = {
     sm: 'px-2 py-1 text-xs',
-    md: 'px-3 py-1.5 text-sm',
-    lg: 'px-4 py-2 text-base'
+    md: 'px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm',
+    lg: 'px-3 sm:px-4 py-1.5 sm:py-2 text-sm sm:text-base'
   };
 
   const config = priorityConfig[priority];
@@ -74,7 +74,7 @@ export function PriorityBadge({
     >
       {/* Animated gradient dot */}
       <motion.span 
-        className={`w-2 h-2 rounded-full bg-gradient-to-r ${config.color} mr-2 shadow-sm`}
+        className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-gradient-to-r ${config.color} mr-1 sm:mr-2 shadow-sm`}
         animate={{ 
           scale: [1, 1.2, 1],
           opacity: [0.8, 1, 0.8]
@@ -89,7 +89,7 @@ export function PriorityBadge({
       {/* Priority icon */}
       {showIcon && (
         <motion.span 
-          className="mr-1.5 font-bold"
+          className="mr-1 sm:mr-1.5 font-bold text-xs sm:text-sm"
           whileHover={{ scale: 1.2 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -97,7 +97,7 @@ export function PriorityBadge({
         </motion.span>
       )}
       
-      {config.label}
+      <span className="whitespace-nowrap">{config.label}</span>
     </motion.div>
   );
 }
